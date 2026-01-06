@@ -1,0 +1,29 @@
+=== DESKRIPSI DATA ===
+
+1. interaction_data.csv
+   - Deskripsi: Data interaksi antara pengguna dan wisata, berisi rating yang diberikan.
+   - Kolom:
+     - user_id (string): ID unik pengguna
+     - wisata_id (string): ID unik wisata
+     - rating (integer): Rating dari 1-5
+   - Contoh: U1, W3, 4
+
+2. user_data.csv
+   - Deskripsi: Data profil pengguna.
+   - Kolom:
+     - user_id (string): ID unik pengguna
+     - umur (integer): Usia pengguna
+     - asal_kota (string): Kota asal pengguna
+     - jenis_kelamin (string): Jenis kelamin (P/L)
+   - Contoh: U1, 55, Kediri, P
+
+3. wisata_data.csv
+   - Deskripsi: Data informasi wisata.
+   - Kolom:
+     - wisata_id (string): ID unik wisata
+     - nama_wisata (string): Nama wisata
+     - kategori (string): Kategori wisata (Alam/Sejarah)
+     - harga (integer): Harga tiket masuk
+     - fasilitas (string): Fasilitas yang tersedia
+     - lokasi (string): Lokasi wisata
+   - Contoh: W1, Gunung Bromo, Alam, 35000, "Parkir, Toilet, Warung, Spot Foto, Penginapan", Probolinggo
