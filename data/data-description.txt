@@ -1,5 +1,3 @@
-=== DESKRIPSI DATA ===
-
 1. interaction_data.csv
    - Deskripsi: Data interaksi antara pengguna dan wisata, berisi rating yang diberikan.
    - Kolom:
