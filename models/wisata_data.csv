@@ -1,0 +1,9 @@
+wisata_id,nama_wisata,kategori,harga,fasilitas,lokasi,feature
+W1,Gunung Bromo,Alam,35000,"Parkir, Toilet, Warung, Spot Foto, Penginapan",Probolinggo,kategori_Alam lokasi_Probolinggo Parkir Toilet Warung Spot Foto Penginapan
+W2,Kawah Ijen,Alam,100000,"Parkir, Toilet, Warung, Spot Foto, Guide",Banyuwangi,kategori_Alam lokasi_Banyuwangi Parkir Toilet Warung Spot Foto Guide
+W3,Pantai Klayar,Alam,10000,"Parkir, Toilet, Warung, Spot Foto",Pacitan,kategori_Alam lokasi_Pacitan Parkir Toilet Warung Spot Foto
+W4,Telaga Sarangan,Alam,15000,"Parkir, Toilet, Warung, Spot Foto, Perahu",Magetan,kategori_Alam lokasi_Magetan Parkir Toilet Warung Spot Foto Perahu
+W5,Air Terjun Tumpak Sewu,Alam,10000,"Parkir, Toilet, Warung, Spot Foto",Lumajang,kategori_Alam lokasi_Lumajang Parkir Toilet Warung Spot Foto
+W6,Pantai Balekambang,Alam,15000,"Parkir, Toilet, Warung, Spot Foto",Malang,kategori_Alam lokasi_Malang Parkir Toilet Warung Spot Foto
+W7,Goa Gong Pacitan,Sejarah,20000,"Parkir, Toilet, Warung, Spot Foto, Guide",Pacitan,kategori_Sejarah lokasi_Pacitan Parkir Toilet Warung Spot Foto Guide
+W8,Pantai Watu Karung,Alam,5000,"Parkir, Toilet, Warung, Spot Foto",Pacitan,kategori_Alam lokasi_Pacitan Parkir Toilet Warung Spot Foto
