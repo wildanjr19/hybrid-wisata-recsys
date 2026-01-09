@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Wisata - LightFM Recommendation System</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>🏝️ Sistem Rekomendasi Wisata Berbasis Content-Based Filtering</h1>
+            <p>Temukan destinasi wisata yang tepat untukmu</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Form Section -->
+            <section class="form-section">
+                <h2>Profil Anda</h2>
+                <form id="userForm">
+                    <div class="form-group">
+                        <label for="umur">Usia</label>
+                        <input type="number" id="umur" name="umur" min="1" max="100" required 
+                               placeholder="Masukkan usia Anda">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asal_kota">Kota Asal</label>
+                        <select id="asal_kota" name="asal_kota" required>
+                            <option value="">Pilih kota asal</option>
+                            <option value="Surabaya">Surabaya</option>
+                            <option value="Malang">Malang</option>
+                            <option value="Kediri">Kediri</option>
+                            <option value="Jember">Jember</option>
+                            <option value="Banyuwangi">Banyuwangi</option>
+                            <option value="Madiun">Madiun</option>
+                            <option value="Blitar">Blitar</option>
+                            <option value="Probolinggo">Probolinggo</option>
+                            <option value="Pasuruan">Pasuruan</option>
+                            <option value="Mojokerto">Mojokerto</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jenis_kelamin">Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="jenis_kelamin" value="P" required>
+                                <span>Perempuan</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="jenis_kelamin" value="L" required>
+                                <span>Laki-laki</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="n_recommendations">Jumlah Rekomendasi</label>
+                        <input type="number" id="n_recommendations" name="n_recommendations" 
+                               min="1" max="8" value="5" required>
+                    </div>
+
+                    <button type="submit" class="btn-submit" id="submitBtn">
+                        <span class="btn-text">Dapatkan Rekomendasi</span>
+                        <span class="btn-loader" style="display: none;">⏳ Memuat...</span>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="results-header">
+                    <h2>Rekomendasi Wisata untuk Anda</h2>
+                    <p id="userInfo"></p>
+                </div>
+                <div class="recommendations-grid" id="recommendationsGrid">
+                    <!-- Recommendations will be inserted here by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Loading State -->
+            <section class="loading-section" id="loadingSection" style="display: none;">
+                <div class="loader"></div>
+                <p>Sedang menganalisis preferensi Anda...</p>
+            </section>
+
+            <!-- Error Section -->
+            <section class="error-section" id="errorSection" style="display: none;">
+                <div class="error-message">
+                    <h3>⚠️ Terjadi Kesalahan</h3>
+                    <p id="errorMessage"></p>
+                    <button class="btn-retry" onclick="hideError()">Coba Lagi</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Tourism Recommendation System | Powered by LightFM</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
