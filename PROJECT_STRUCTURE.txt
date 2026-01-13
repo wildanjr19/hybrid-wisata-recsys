@@ -1,0 +1,59 @@
+Content Based Filtering/
+│
+├── data/                           
+│   ├── wisata_data.csv             # Data tempat wisata
+│   ├── user_data.csv               # Data user profiles
+│   ├── interaction_data.csv        # Interaksi/relasi antara tempat wisata dan user
+│   └── data-description.txt        # Deskripsi data
+│
+├── notebooks/                   
+│   ├── model-training-v1.ipynb     # Training pipeline
+│   └── generate-dummy-data.ipynb   # Generate dummy data
+│
+├── backend/                     
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py                 # Entry point FastAPI
+│   │   ├── models/
+│   │   │   ├── __init__.py
+│   │   │   └── schemas.py          # Pydantic request/response models
+│   │   ├── routes/
+│   │   │   ├── __init__.py
+│   │   │   └── recommendation.py   # API endpoints
+│   │   ├── services/
+│   │   │   ├── __init__.py
+│   │   │   └── recommendation_service.py  # ML logic & predictions
+│   │   └── utils/
+│   │       └── __init__.py
+│   ├── requirements.txt            # Python dependencies
+│   └── README.md                   
+│
+├── frontend/                    
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── style.css           # Styling
+│   │   ├── js/
+│   │   │   └── app.js              # Frontend js
+│   │   └── images/                 # Gambar tempat wisata    
+│   ├── 📁 templates/
+│   │   └── index.html              # UI
+│   └── README.md                  
+│
+├── models/                      
+│   ├── lightfm_model.pkl           # Trained LightFM recommendation model
+│   ├── user_id_map.pkl             # Mapping: internal user ID ↔ original user ID
+│   ├── item_id_map.pkl             # Mapping: internal item ID ↔ wisata ID
+│   ├── user_feature_map.pkl        # User feature name to index mapping
+│   ├── item_feature_map.pkl        # Item feature name to index mapping
+│   ├── user_features.pkl           # Sparse matrix of user features
+│   ├── item_features.pkl           # Sparse matrix of item features
+│   ├── user_master.csv             # User demographic data
+│   ├── wisata_data.csv             # Wisata/tourism destination data
+│   └── README.md                   # Model documentation and usage guide
+├── .gitignore                      # Git ignore rules
+├── README.md                       # Main project documentation
+├── run.bat                         # Windows startup script
+├── run.sh                          # Linux/Mac startup script
+├── test_api.py                     # API testing script
+└── project-structure.txt           
+
